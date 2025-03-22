@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style2.css">
-        <title>Support</title>
+        <title>NBA</title>
     </head>
 
     <div class="Container">
@@ -12,11 +12,17 @@
             <ul>
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a class="active" href="account.html">Account</a></li>
-                <li><a class="active" href="support.html">Support</a></li>
+                <li><a class="active" href="NBA.html">NBA</a></li>
             </ul>
         </div>
     </div>
-    <div>
-        <p>This is going to be a suppport page, or maybe another page, idk, the page displays so im happy at the moment</p>
+
+    <div style="margin-left: 100px;">
+        <form action="/NBAplayerhub" method="post">
+            <label for="input">Enter Players Name you want to research:</label><br>
+            <input type="text" id="input" name="input"><br>
+            <input type="submit" value="Submit">
+        </form>
+        <p>{{DisplayName}} {{ result1|safe }}</p>
     </div>
 </html>

@@ -21,3 +21,8 @@ function addNote(color,fontSize) {
     // Append the new textarea to the note pad
     document.getElementById("NotePad").appendChild(newTextArea);
 }
+
+/*function deleteNote(this){
+    this.parentElement.remove()
+}
+*/
